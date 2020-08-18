@@ -31,6 +31,7 @@ public class LogicBoard {
 
     public void put(ChessPiece piece) {
         update();
+        if (peek(getFile(piece), getRank(piece))) get(getFile(piece), getRank(piece)).delete();
         piecesBoard[getFile(piece)][getRank(piece)] = piece;
     }
 

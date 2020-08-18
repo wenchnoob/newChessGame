@@ -10,6 +10,7 @@ import java.awt.*;
 
 public abstract class ChessPiece extends GameObject {
 
+    protected boolean deleted = false;
     protected Faction faction;
     protected boolean selected = false;
 
@@ -17,6 +18,18 @@ public abstract class ChessPiece extends GameObject {
         super(x, y, id, color);
         this.faction = faction;
         this.blocked = false;
+    }
+
+    public void delete() {
+        deleted = true;
+    }
+
+    private void recover() {
+        deleted = false;
+    }
+
+    public boolean isDeleted() {
+        return deleted;
     }
 
     protected void make(Color color, Graphics g, String name) {
@@ -62,10 +75,9 @@ public abstract class ChessPiece extends GameObject {
 
     protected double angle(Move move) {
         try {
-            return (double) (y - move.getY()) / (x - move.getX());
-        } catch (ArithmeticException exception) {
-            if (y < move.getY()) return Double.POSITIVE_INFINITY;
-            else return Double.NEGATIVE_INFINITY;
+            return Math.atan(move.getY() - y / (double) (move.getX() - x));
+        } catch (ArithmeticException e) {
+            return 0;
         }
     }
 }

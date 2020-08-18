@@ -22,7 +22,8 @@ public class Handler {
         }
 
         for (GameObject tempObject : pieces) {
-            tempObject.render(g);
+            if (!((ChessPiece) tempObject).isDeleted())
+                tempObject.render(g);
         }
     }
 
