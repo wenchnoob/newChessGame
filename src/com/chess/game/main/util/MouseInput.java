@@ -1,20 +1,20 @@
 package com.chess.game.main.util;
 
 import com.chess.game.main.components.GameObject;
-import com.chess.game.main.components.board.LogicBoard;
+import com.chess.game.main.components.board.Board;
 import com.chess.game.main.components.pieces.ChessPiece;
 
+import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
 
-public class MouseInput implements MouseListener {
+public class MouseInput extends MouseAdapter {
 
     private boolean pieceSelected = false;
-    private final LogicBoard board;
+    private final Board board;
 
     private ChessPiece selectedPiece;
 
-    public MouseInput(LogicBoard board) {
+    public MouseInput(Board board) {
         this.board = board;
     }
 
@@ -23,8 +23,8 @@ public class MouseInput implements MouseListener {
         if (!pieceSelected) {
             int curX = e.getX();
             int curY = e.getY();
-            for (int i = 0; i < Handler.pieces.size(); i++) {
-                ChessPiece piece = Handler.pieces.get(i);
+            for (int i = 0; i < Board.pieces().size(); i++) {
+                ChessPiece piece = Board.pieces().get(i);
                 if (withinBounds(curX, curY, piece)) {
                     pieceSelected = true;
                     selectedPiece = piece;
@@ -45,8 +45,8 @@ public class MouseInput implements MouseListener {
                 selectedPiece.setX(curMove.getX());
                 selectedPiece.setY(curMove.getY());
 
-                if (LogicBoard.peek(curMove.getFile(), curMove.getRank()))
-                    Handler.pieces().remove(LogicBoard.get(curMove.getFile(), curMove.getRank()));
+               /* if (Board.peek(curMove.getFile(), curMove.getRank()))
+                    Board.pieces().remove(Board.get(curMove.getFile(), curMove.getRank()));*/
                 board.put(selectedPiece);
             }
 

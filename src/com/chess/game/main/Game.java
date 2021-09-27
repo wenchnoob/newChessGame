@@ -1,8 +1,6 @@
 package com.chess.game.main;
 
-import com.chess.game.main.components.board.LogicBoard;
-import com.chess.game.main.components.board.VisualBoard;
-import com.chess.game.main.util.Handler;
+import com.chess.game.main.components.board.Board;
 import com.chess.game.main.util.MouseInput;
 import com.chess.game.main.util.PiecesManager;
 import com.chess.game.main.util.Window;
@@ -15,12 +13,19 @@ public class Game extends Canvas implements Runnable {
     public static Game game;
 
     private static final long serialVersionUID = 1L;
-    private int HEIGHT = 640, WIDTH = HEIGHT * 12 / 9;
+    private final int HEIGHT = 640, WIDTH = HEIGHT * 12 / 9;
 
     private Thread thread;
     private boolean running = false;
 
-    private final Handler handler;
+
+    public Game() {
+        new Window(WIDTH, HEIGHT, "Chess", this);
+        new PiecesManager();
+
+        this.addMouseListener(new MouseInput(new Board()));
+        //this.start();
+    }
 
     public synchronized void start() {
         thread = new Thread(this);
@@ -35,18 +40,6 @@ public class Game extends Canvas implements Runnable {
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }
-
-
-    public Game() {
-        handler = new Handler();
-
-        new Window(WIDTH, HEIGHT, "Chess", this);
-        new VisualBoard(180, 530, null, handler);
-        new PiecesManager(handler);
-
-        this.addMouseListener(new MouseInput(new LogicBoard()));
-
     }
 
     @Override
@@ -73,7 +66,6 @@ public class Game extends Canvas implements Runnable {
         g2D.setStroke(new BasicStroke(5));
         drawLabels(g);
         g2D.setStroke(new BasicStroke(2));
-        handler.render(g);
         g.dispose();
         bs.show();
     }
@@ -107,7 +99,8 @@ public class Game extends Canvas implements Runnable {
     }
 
     public static void main(String[] args) {
-        new Game();
+        Game g = new Game();
+        g.start();
     }
 
 

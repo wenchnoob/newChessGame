@@ -1,7 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="9df9c7b9-fcb2-465c-b07c-cb3d07da16cd" name="Default Changelist" comment="" />
+    <list default="true" id="9df9c7b9-fcb2-465c-b07c-cb3d07da16cd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/chessgame/main/Bishop.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/chessgame/main/Board.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/chessgame/main/ChessPiece.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/chessgame/main/Faction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/chessgame/main/Game.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/chessgame/main/GameObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/chessgame/main/GridSquare.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/chessgame/main/Handler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/chessgame/main/ID.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/chessgame/main/King.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/chessgame/main/Knight.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/chessgame/main/LogicGate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/chessgame/main/MouseInput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/chessgame/main/Operations.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/chessgame/main/Pawn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/chessgame/main/PiecesManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/chessgame/main/Queen.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/chessgame/main/Rook.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/chessgame/main/Saver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/chessgame/main/Util.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/chessgame/main/Window.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/chess/game/main/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/chess/game/main/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/chess/game/main/components/board/LogicBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/chess/game/main/components/board/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/chess/game/main/components/board/VisualBoard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/chess/game/main/components/pieces/ChessPiece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/chess/game/main/components/pieces/ChessPiece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/chess/game/main/util/Handler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/chess/game/main/util/MouseInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/chess/game/main/util/MouseInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/chess/game/main/util/PiecesManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/chess/game/main/util/PiecesManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/chess/game/main/util/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/chess/game/main/util/Window.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,7 +76,11 @@
     <analyzeAfterCompile>true</analyzeAfterCompile>
     <toolWindowToFront>false</toolWindowToFront>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1fSd0KArFzZddKjHX7kYDRtvNkt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="abbreviatePackageNames" value="true" />
     <option name="autoscrollFromSource" value="true" />
@@ -37,6 +93,9 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -49,10 +108,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2" />
@@ -62,6 +117,17 @@
       <module name="ChessGame" />
       <method v="2" />
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -69,55 +135,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
-  <component name="WindowStateProjectService">
-    <state x="445" y="198" key="#com.intellij.ide.util.MemberChooser" timestamp="1597166909332">
-      <screen x="0" y="0" width="1280" height="984" />
-    </state>
-    <state x="445" y="198" key="#com.intellij.ide.util.MemberChooser/-1366.0.1366.728/0.0.1280.984@0.0.1280.984" timestamp="1597166909332" />
-    <state x="370" y="239" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597204197283">
-      <screen x="0" y="0" width="1280" height="984" />
-    </state>
-    <state x="370" y="239" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1366.0.1366.728/0.0.1280.984@0.0.1280.984" timestamp="1597204197283" />
-    <state width="1259" height="272" key="GridCell.Tab.0.bottom" timestamp="1597722257158">
-      <screen x="0" y="0" width="1280" height="984" />
-    </state>
-    <state width="1259" height="272" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1280.984@0.0.1280.984" timestamp="1597722257158" />
-    <state width="1259" height="272" key="GridCell.Tab.0.center" timestamp="1597722257157">
-      <screen x="0" y="0" width="1280" height="984" />
-    </state>
-    <state width="1259" height="272" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1280.984@0.0.1280.984" timestamp="1597722257157" />
-    <state width="1259" height="272" key="GridCell.Tab.0.left" timestamp="1597722257157">
-      <screen x="0" y="0" width="1280" height="984" />
-    </state>
-    <state width="1259" height="272" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1280.984@0.0.1280.984" timestamp="1597722257157" />
-    <state width="1259" height="272" key="GridCell.Tab.0.right" timestamp="1597722257158">
-      <screen x="0" y="0" width="1280" height="984" />
-    </state>
-    <state width="1259" height="272" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1280.984@0.0.1280.984" timestamp="1597722257158" />
-    <state width="1259" height="336" key="GridCell.Tab.1.bottom" timestamp="1597712684785">
-      <screen x="0" y="0" width="1280" height="984" />
-    </state>
-    <state width="1259" height="336" key="GridCell.Tab.1.bottom/-1366.0.1366.728/0.0.1280.984@0.0.1280.984" timestamp="1597712684785" />
-    <state width="1259" height="336" key="GridCell.Tab.1.center" timestamp="1597712684784">
-      <screen x="0" y="0" width="1280" height="984" />
-    </state>
-    <state width="1259" height="336" key="GridCell.Tab.1.center/-1366.0.1366.728/0.0.1280.984@0.0.1280.984" timestamp="1597712684784" />
-    <state width="1259" height="336" key="GridCell.Tab.1.left" timestamp="1597712684784">
-      <screen x="0" y="0" width="1280" height="984" />
-    </state>
-    <state width="1259" height="336" key="GridCell.Tab.1.left/-1366.0.1366.728/0.0.1280.984@0.0.1280.984" timestamp="1597712684784" />
-    <state width="1259" height="336" key="GridCell.Tab.1.right" timestamp="1597712684784">
-      <screen x="0" y="0" width="1280" height="984" />
-    </state>
-    <state width="1259" height="336" key="GridCell.Tab.1.right/-1366.0.1366.728/0.0.1280.984@0.0.1280.984" timestamp="1597712684784" />
-    <state x="152" y="240" key="caller.chooser.dialog" timestamp="1597209833181">
-      <screen x="0" y="0" width="1280" height="984" />
-    </state>
-    <state x="152" y="240" key="caller.chooser.dialog/-1366.0.1366.728/0.0.1280.984@0.0.1280.984" timestamp="1597209833181" />
-    <state x="435" y="239" key="refactoring.ChangeSignatureDialog" timestamp="1597164293796">
-      <screen x="0" y="0" width="1280" height="984" />
-    </state>
-    <state x="435" y="239" key="refactoring.ChangeSignatureDialog/-1366.0.1366.728/0.0.1280.984@0.0.1280.984" timestamp="1597164293796" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9df9c7b9-fcb2-465c-b07c-cb3d07da16cd" name="Default Changelist" comment="" />
+      <created>1600620594522</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600620594522</updated>
+      <workItem from="1632718821174" duration="3519000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

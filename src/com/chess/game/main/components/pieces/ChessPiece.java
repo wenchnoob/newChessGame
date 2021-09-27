@@ -1,7 +1,7 @@
 package com.chess.game.main.components.pieces;
 
 import com.chess.game.main.components.GameObject;
-import com.chess.game.main.components.board.LogicBoard;
+import com.chess.game.main.components.board.Board;
 import com.chess.game.main.util.Faction;
 import com.chess.game.main.util.ID;
 import com.chess.game.main.util.Move;
@@ -68,8 +68,8 @@ public abstract class ChessPiece extends GameObject {
     }
 
     public boolean validate(Move move) {
-        if (LogicBoard.peek(move.getFile(), move.getRank()))
-            return LogicBoard.faction(move.getFile(), move.getRank()) != faction;
+        if (Board.peek(move.getFile(), move.getRank()))
+            return Board.faction(move.getFile(), move.getRank()) != faction;
         return true;
     }
 

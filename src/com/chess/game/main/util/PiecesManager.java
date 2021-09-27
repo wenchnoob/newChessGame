@@ -1,17 +1,16 @@
 package com.chess.game.main.util;
 
+import com.chess.game.main.components.board.Board;
 import com.chess.game.main.components.pieces.*;
 
 public class PiecesManager {
     private ChessPiece piece;
-    private Handler handler;
 
-    public PiecesManager(Handler handler) {
-        this.handler = handler;
-        loadPieces(handler);
+    public PiecesManager() {
+        loadPieces();
     }
 
-    public void loadPieces(Handler handler) {
+    public void loadPieces() {
         makePawns();
         makeRooks();
         makeKnight();
@@ -64,31 +63,31 @@ public class PiecesManager {
 
     public void makeKing(int x, int y, ID id, Faction faction) {
         this.piece = new King(x, y, id, faction);
-        handler.addObject(piece);
+        Board.put(piece);
     }
 
     public void makeQueen(int x, int y, ID id, Faction faction) {
         this.piece = new Queen(x, y, id, faction);
-        handler.addObject(piece);
+        Board.put(piece);
     }
 
     public void makeBishop(int x, int y, ID id, Faction faction) {
         this.piece = new Bishop(x, y, id, faction);
-        handler.addObject(piece);
+        Board.put(piece);
     }
 
     public void makeKnight(int x, int y, ID id, Faction faction) {
         this.piece = new Knight(x, y, id, faction);
-        handler.addObject(piece);
+       Board.put(piece);
     }
 
     public void makeRook(int x, int y, ID id, Faction faction) {
         this.piece = new Rook(x, y, id, faction);
-        handler.addObject(piece);
+        Board.put(piece);
     }
 
     public void makePawn(int x, int y, ID id, Faction faction) {
         this.piece = new Pawn(x, y, id, faction);
-        handler.addObject(piece);
+        Board.put(piece);
     }
 }
